@@ -1,0 +1,10 @@
+# Generated code
+_site/
+node_modules/
+
+# Environment variables
+.env
+
+# Caches
+.prettiercache
+.eslintcache

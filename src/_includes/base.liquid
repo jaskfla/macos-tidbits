@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
+
+		<link rel="preload" href="/style/styles.css" as="style" crossorigin />
+		<link rel="stylesheet" media="all" href="/style/styles.css" />
+
+		<title>macOS Tidbits</title>
+
+		<link rel="canonical" href="{{ metadata.url }}{{ page.url }}" />
+		<meta name="apple-mobile-web-app-title" content="macOS Tidbits" />
+		<meta name="description" content="{{ metadata.description }}" />
+		<meta name="fediverse:creator" content="@jasperlai@mastodon.online" />
+		<meta name="generator" content="{{ eleventy.generator }}" />
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: dark)"
+			content="oklch(24% 0.03 333)"
+		/>
+		<meta
+			name="theme-color"
+			media="(prefers-color-scheme: light)"
+			content="oklch(88% 0.025 254)"
+		/>
+		<meta property="og:description" content="{{ metadata.description }}" />
+		<meta property="og:locale" content="en_NZ" />
+		<meta property="og:site_name" content="Jasper Lai" />
+		<meta property="og:title" content="{{ title }}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{{ metadata.url }}{{ page.url }}" />
+	</head>
+	<body>
+		<header style="text-wrap: balance">
+			<picture>
+				<source src="/images/emac.webp" type="image/webp" />
+				<source src="/images/emac.png" type="image/png" />
+				<image src="/images/emac.png" type="image/png" width="72" height="72" />
+			</picture>
+			<h1 style="margin-block-start: 0.5em">{{ title }}</h1>
+			<p>{{ metadata.description }}</p>
+		</header>
+		<hr />
+		<main class="flow">{{ content }}</main>
+		<footer>
+			<style>
+				@scope {
+					p:first-of-type {
+						font-stretch: 125%;
+						font-weight: 700;
+						letter-spacing: normal;
+					}
+					p:last-of-type {
+						color: oklch(from currentcolor l c h / 55%);
+						font-size: 88.88888889%;
+					}
+				}
+			</style>
+			<p>
+				A li’l
+				<a href="{{ metadata.repoUrl }}" target="_blank">side project</a> by
+				<a href="https://lai.nz" target="_blank">Jasper</a>
+			</p>
+			<p>No affiliation with the fruit company, though</p>
+		</footer>
+	</body>
+</html>
