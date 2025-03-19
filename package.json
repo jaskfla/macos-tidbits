@@ -11,8 +11,9 @@
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^3.0.0",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
 		"html-minifier-terser": "^7.2.0",
-		"rimraf":"^6.0.1"
+		"rimraf": "^6.0.1"
 	},
 	"bugs": {
 		"url": "https://github.com/jaskfla/macos-tidbits/issues",
@@ -30,5 +31,6 @@
 		"clean:deps": "rimraf node_modules",
 		"clean:build": "rimraf _site"
 	},
-	"type": "module"
+	"type": "module",
+
 }

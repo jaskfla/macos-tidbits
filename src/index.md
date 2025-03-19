@@ -167,9 +167,11 @@ without typing anything.[^iterm]
 
 ## Network quality
 
-Test your network capacity without any third party things (like speedtest.net or
-fast.com) by running `networkQuality` from the command line, optionally using
-the **`-v`** flag for ~~_verbose output_~~ _very nerdy details_.
+Test your network capacity without any third party things (like
+<a href="https://www.speedtest.net" target="_blank">speedtest.net</a> or
+<a href="https://www.fast.com" target="_blank">fast.com</a>) by running
+`networkQuality` from the command line, optionally using the **`-v`** flag for
+~~_verbose output_~~ _very nerdy details_.
 
 ```sh
 > networkQuality

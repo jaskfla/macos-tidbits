@@ -1,3 +1,4 @@
+import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import { minify } from 'html-minifier-terser';
 
 const SOURCE_DIR = 'src';
@@ -11,6 +12,8 @@ export default (eleventyConfig) => {
 		date.toISOString().slice(0, 10)
 	);
 	eleventyConfig.addFilter('stringify', (o) => JSON.stringify(o, null, '\t'));
+
+	eleventyConfig.addPlugin(syntaxHighlight);
 
 	eleventyConfig.addTransform('htmlmin', function (content) {
 		return this.page.outputPath?.endsWith('.html')
