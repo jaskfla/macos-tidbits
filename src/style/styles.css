@@ -229,7 +229,10 @@
 @layer base {
 	* {
 		font-feature-settings: 'case' var(--ot-case, off),
-			'sinf' var(--ot-sinf, off);
+			'sinf' var(--ot-sinf, off), 'ss01' var(--ot-open-six-and-nine, off),
+			'ss02' var(--ot-open-4, off), 'ss04' var(--ot-alt-currency-symbols, off),
+			'ss06' var(--ot-legible, off), 'cv06' var(--ot-alt-l, off),
+			'cv07' var(--ot-single-story-a, off);
 	}
 
 	:root {
@@ -296,6 +299,9 @@
 			);
 
 		/* Type */
+		--ot-alt-l: on;
+		--ot-alt-currency-symbols: on;
+		font-variant-alternates: styleset(legible);
 		color: var(--color-fg);
 		font-family: var(--font-body);
 		font-weight: 440;
@@ -311,6 +317,20 @@
 	:root > * {
 		max-inline-size: 38rem;
 		margin-inline: auto;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: var(--font-display);
+	}
+
+	em,
+	i {
+		--ot-single-story-a: on;
 	}
 
 	main {
