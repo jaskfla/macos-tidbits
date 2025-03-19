@@ -31,6 +31,5 @@
 		"clean:deps": "rimraf node_modules",
 		"clean:build": "rimraf _site"
 	},
-	"type": "module",
-
+	"type": "module"
 }
