@@ -386,7 +386,7 @@
 		border-radius: 0.4em;
 		border: 0.08em solid oklch(from currentcolor l c h / 12%);
 		box-shadow: inset 0 -0.06em 0 0 oklch(from currentcolor l c h / 12%);
-		font-family: ui-rounded, var(--font-body);
+		font-family: ui-rounded, var(--font-mono);
 		padding-block: 0.2em;
 		padding-inline: 0.3em;
 
