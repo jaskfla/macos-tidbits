@@ -3,9 +3,9 @@ title: macOS Tidbits
 layout: base.liquid
 ---
 
-When <kbd>⌘</kbd><kbd>↹</kbd>-ing between apps, mouse over an app and
-release <kbd>⌘</kbd> to switch to that app without having to spam <kbd>↹</kbd>
-or <kbd>⇧</kbd><kbd>↹</kbd>.
+When <kbd>⌘</kbd><kbd>↹</kbd>-ing between apps, mouse over an app and release
+<kbd>⌘</kbd> to switch to that app without having to spam <kbd>↹</kbd> or
+<kbd>⇧</kbd><kbd>↹</kbd>.
 
 <kbd>⌥</kbd><kbd>⌘</kbd>-click an app in the Dock to switch to that app _and
 hide all other apps_ at the same time. This is great when screen sharing.
@@ -52,6 +52,10 @@ for window screenshots. Hold <kbd>⌥</kbd> to add the shadow.
 Click and hold the Spotlight button in the Menu Bar to reset its location on
 screen.
 
+Any self-respecting Mac opens the **Help** menu when you press
+<kbd>⌘</kbd><kbd>?</kbd>. (Safari, for some god-forsaken reason opens the Tips
+app instead.)
+
 ## Function keys
 
 Hold <kbd>⇧</kbd><kbd>⌥</kbd> to adjust display brightness, volume or keyboard
@@ -86,13 +90,27 @@ When using drag & drop to copy/move a file, hold <kbd>⌘</kbd> to force Finder 
     a different drive, Finder will copy by default. This is when these modifiers
     come in handy.
 
-In Finder, hold <kbd>⌥</kbd> to **Get Info** on all selected items in one <i>Inspector</i>
-window, rather than in a barrage of individual <i>Info</i> windows. This also works with
-<kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd> (instead of <kbd>⌘</kbd><kbd>I</kbd>).
+In Finder, hold <kbd>⌥</kbd> to **Get Info** on all selected items in one
+<i>Inspector</i> window, rather than in a barrage of individual <i>Info</i>
+windows. This also works with <kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd> (instead of
+<kbd>⌘</kbd><kbd>I</kbd>).
 
 In any Save sheet, drag and drop a folder onto the sheet to navigate there in
 the Save sheet. Drag and drop a file to navigate there _and_ prepopulate the
 <i>Save As</i> field with its filename.
+
+## Tabs
+
+Middle-click a tab to close it.
+
+Hold <kbd>⌥</kbd> when closing a tab to close all other tabs instead.
+
+## Column views
+
+In any standard column view (e.g.&nbsp;Finder), hold <kbd>⌥</kbd> to resize all
+columns equally.
+
+![](https://cdn.discordapp.com/attachments/818660821004845060/986501637088641094/Screenshot_2022-06-15T172320.gif?ex=67dafdfe&is=67d9ac7e&hm=4c1e02d50e8d91ac02ddbdb147a7e6ededeee67654f371d528d7c5a124442207)
 
 ## Custom icons
 
