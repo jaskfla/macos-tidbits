@@ -86,13 +86,13 @@ When using drag & drop to copy/move a file, hold <kbd>⌘</kbd> to force Finder 
     a different drive, Finder will copy by default. This is when these modifiers
     come in handy.
 
-In Finder, hold <kbd>⌥</kbd> to **Get Info** on all selected items in one Info
-window, rather than in a barrage of individual windows. This also works with
+In Finder, hold <kbd>⌥</kbd> to **Get Info** on all selected items in one <i>Inspector</i>
+window, rather than in a barrage of individual <i>Info</i> windows. This also works with
 <kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd> (instead of <kbd>⌘</kbd><kbd>I</kbd>).
 
 In any Save sheet, drag and drop a folder onto the sheet to navigate there in
 the Save sheet. Drag and drop a file to navigate there _and_ prepopulate the
-“Save As” field with its filename.
+<i>Save As</i> field with its filename.
 
 ## Custom icons
 
@@ -106,12 +106,12 @@ left, and paste! Or simply drag & drop and image or `.icns` onto the icon.
     Icon Image format</a>, which is used for icons macOS-wide. It’s basically
     just a container of an icon at different sizes. Why not just scale one
     image? Designers can use
-    <a href="https://developers.google.com/fonts/docs/material_symbols#opsz_axis" target="_blank"><em>optical
-    sizing</em></a> to optimise the “same” icon for display at different sizes.
+    <a href="https://developers.google.com/fonts/docs/material_symbols#opsz_axis" target="_blank"><i>optical
+    sizing</i></a> to optimise the “same” icon for display at different sizes.
 
 ![](https://cdn.discordapp.com/attachments/818660821004845060/962141177077972993/Screenshot_2022-04-09T120319.png?ex=67dab30c&is=67d9618c&hm=8a4468473c223e5d631ab1b577e907ad8d619468f3de9910b6b2be6cfbf5bd37)
 
-Relatedly, you can even copy the icon from one file’s **Info** panel to paste
+Relatedly, you can even copy the icon from one file’s <i>Info</i> panel to paste
 into another.
 
 Also relatedly, a bunch of the system icons live in
