@@ -35,11 +35,11 @@ Relatedly, you can
 [make screenshots save somewhere else](https://macos-defaults.com/screenshots/location.html).
 
 When using <kbd>⇧</kbd><kbd>⌘</kbd><kbd>4</kbd> to take screenshots, press
-<kbd>Space</kbd> to take screenshots of windows. In this mode, you can also:
+<kbd>space</kbd> to capture by window. In this mode, you can also:
 
 - hold <kbd>⌥</kbd> to take the window screenshot sans-shadow; and/or
-- hold <kbd>⌘</kbd> to capture child views within a window—such as open/save
-  dialogues, alert windows, et al.
+- hold <kbd>⌘</kbd> to capture child views within a window (such as open/save
+  dialogues, alert windows, et al).
 
 Relatedly, you can
 [make shadowless default](https://macos-defaults.com/screenshots/disable-shadow.html)
