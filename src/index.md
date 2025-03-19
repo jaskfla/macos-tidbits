@@ -53,8 +53,8 @@ Click and hold the Spotlight button in the Menu Bar to reset its location on
 screen.
 
 Any self-respecting Mac opens the **Help** menu when you press
-<kbd>⌘</kbd><kbd>?</kbd>. (Safari, for some god-forsaken reason opens the Tips
-app instead.)
+<kbd>⌘</kbd><kbd>?</kbd>. (Safari, for some god-forsaken reason opens the
+[Tips](x-apple-tips://) app instead.)
 
 ## Function keys
 
