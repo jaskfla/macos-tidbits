@@ -178,7 +178,7 @@ without typing anything.[^iterm]
 
 [^iterm]:
     This also works in [iTerm](https://iterm2.com). Though Terminal is a
-    perfectly adequate terminal emulator, if you'd like a few more bells and
+    perfectly adequate terminal emulator, if you’d like a few more bells and
     whistles, iTerm is worth looking at. As is [Warp](https://www.warp.dev), but
     as of March&nbsp;2025, Warp doesn’t support this <kbd>⌘</kbd>-drag shortcut.
     Criminal.
