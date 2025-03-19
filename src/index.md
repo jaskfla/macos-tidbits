@@ -3,7 +3,7 @@ title: macOS Tidbits
 layout: base.liquid
 ---
 
-When <kbd>⌘</kbd><kbd>↹</kbd>-ing between apps, mouse over over an app and
+When <kbd>⌘</kbd><kbd>↹</kbd>-ing between apps, mouse over an app and
 release <kbd>⌘</kbd> to switch to that app without having to spam <kbd>↹</kbd>
 or <kbd>⇧</kbd><kbd>↹</kbd>.
 
