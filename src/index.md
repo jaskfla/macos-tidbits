@@ -13,9 +13,7 @@ hide all other apps_ at the same time. This is great when screen sharing.
 Hold <kbd>⌘</kbd> to interact with background windows _without bringing them
 into focus_.
 
----
-
-### Text selection
+## Text selection
 
 When using the cursor to select text, double-click to select a words.
 Triple-click to select a paragraph.
@@ -23,14 +21,10 @@ Triple-click to select a paragraph.
 Relatedly, double-click and drag to select word-by-word. Triple-click and drag
 to select paragraph-by-paragraph.
 
----
-
 ## Right-click with keyboard
 
 <kbd>⌃</kbd><kbd>⏎</kbd> to right-click whatever is currently focused. (Though,
 strictly speaking, there’s no clicking involved here.)
-
----
 
 ## Screenshots
 
@@ -51,16 +45,12 @@ Relatedly, you can
 [make shadowless default](https://macos-defaults.com/screenshots/disable-shadow.html)
 for window screenshots. Hold <kbd>⌥</kbd> to add the shadow.
 
----
-
 ## Menu Bar
 
 <kbd>⌘</kbd>-drag to reorder icons in the Menu Bar.
 
 Click and hold the Spotlight button in the Menu Bar to reset its location on
 screen.
-
----
 
 ## Function keys
 
@@ -83,8 +73,6 @@ settings is to <kbd>⌥</kbd>-press either <kbd>brightness up</kbd> or
 (Works with Touch Bar too! <kbd>⌥</kbd>-tap the corresponding button in the
 Control Strip.)
 
----
-
 ## Finder
 
 When using drag & drop to copy/move a file, hold <kbd>⌘</kbd> to force Finder to
@@ -105,8 +93,6 @@ window, rather than in a barrage of individual windows. This also works with
 In any Save sheet, drag and drop a folder onto the sheet to navigate there in
 the Save sheet. Drag and drop a file to navigate there _and_ prepopulate the
 “Save As” field with its filename.
-
----
 
 ## Custom icons
 
@@ -133,8 +119,6 @@ Also relatedly, a bunch of the system icons live in
 
 ![](https://cdn.discordapp.com/attachments/818660821004845060/962141380434616320/Screenshot_2022-04-09T120407.png?ex=67dab33c&is=67d961bc&hm=c0841ebdfbc0a84a0918e757f22755e3550a2032fba278e7c6e1a75ef600b05e)
 
----
-
 ## Spelling dictionary
 
 When macOS says you’ve spelled something wrong, and you right-click then choose
@@ -144,8 +128,6 @@ dictionary that you no longer want, just open up the file and delete the word.
 
 Relatedly, <kbd>⇧</kbd><kbd>⌘</kbd><kbd>G</kbd> in any Finder window to paste to
 go straight to the right folder.
-
----
 
 ## Dock
 
@@ -163,8 +145,6 @@ Set it back to normal with:
 ```sh
 defaults delete com.apple.dock contents-immutable && killall Dock
 ```
-
----
 
 ## Terminal
 
@@ -184,8 +164,6 @@ without typing anything.[^iterm]
     whistles, iTerm is worth looking at. As is [Warp](https://www.warp.dev), but
     as of March&nbsp;2025, Warp doesn’t support this <kbd>⌘</kbd>-drag shortcut.
     Criminal.
-
----
 
 ## Network quality
 

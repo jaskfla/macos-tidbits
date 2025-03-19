@@ -403,7 +403,7 @@
 	}
 
 	h2 {
-		margin-block-start: 10rem;
+		--flow-space: 10rem;
 		font-weight: bolder;
 		opacity: 88%;
 	}
@@ -422,6 +422,6 @@
 	}
 
 	s {
-		opacity: 55%;
+		color: oklch(from currentcolor l c h / 55%);
 	}
 }
