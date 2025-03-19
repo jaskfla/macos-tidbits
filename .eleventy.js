@@ -8,11 +8,6 @@ export default (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/style`);
 	eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/robots.txt`);
 
-	eleventyConfig.addFilter('isoDateString', (date) =>
-		date.toISOString().slice(0, 10)
-	);
-	eleventyConfig.addFilter('stringify', (o) => JSON.stringify(o, null, '\t'));
-
 	eleventyConfig.addPlugin(syntaxHighlight);
 
 	eleventyConfig.addTransform('htmlmin', function (content) {
