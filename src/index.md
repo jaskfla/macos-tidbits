@@ -52,9 +52,9 @@ for window screenshots. Hold <kbd>⌥</kbd> to add the shadow.
 Click and hold the Spotlight button in the Menu Bar to reset its location on
 screen.
 
-Any self-respecting Mac opens the **Help** menu when you press
+Any self-respecting Mac app opens the **Help** menu when you press
 <kbd>⌘</kbd><kbd>?</kbd>. (Safari, for some god-forsaken reason opens the
-[Tips](x-apple-tips://) app instead.)
+[Tips](x-apple-tips://) app instead. 🤬)
 
 ## Function keys
 
