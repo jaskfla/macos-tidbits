@@ -299,7 +299,6 @@
 			);
 
 		/* Type */
-		--ot-alt-l: on;
 		--ot-alt-currency-symbols: on;
 		font-variant-alternates: styleset(legible);
 		color: var(--color-fg);
@@ -330,6 +329,7 @@
 
 	em,
 	i {
+		--ot-alt-l: on;
 		--ot-single-story-a: on;
 	}
 
