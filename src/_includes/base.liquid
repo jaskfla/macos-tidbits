@@ -42,7 +42,10 @@
 			<p>{{ metadata.description }}</p>
 		</header>
 		<hr />
-		<main class="flow">{{ content }}</main>
+		<main class="flow">
+			{{ content }}
+			{% footnotes %}
+		</main>
 		<footer>
 			<style>
 				@scope {

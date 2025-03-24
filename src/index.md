@@ -79,16 +79,12 @@ Control Strip.)
 
 ## Finder
 
-When using drag & drop to copy/move a file, hold <kbd>⌘</kbd> to force Finder to
-**move** the file, or hold <kbd>⌥</kbd> to force Finder to
+When using
+{% footnoteref 'finder-drag-drop', 'By default, macOS will move the file if you’re dragging within the same drive (well, technically, the same partition). If you drag to a location on a different drive, Finder will copy by default. This is when these modifiers come in handy.' %}
+drag & drop to copy/move a file{% endfootnoteref %}, hold <kbd>⌘</kbd> to force
+Finder to **move** the file, or hold <kbd>⌥</kbd> to force Finder to
 <strong style="cursor: copy">copy</strong> the file. (Yes, you can
-<kbd>⌥</kbd>-drag to duplicate a file within a single folder.)[^finderdragdrop]
-
-[^finderdragdrop]:
-    By default, macOS will move the file if you’re dragging within the same
-    drive (well, technically, the same partition). If you drag to a location on
-    a different drive, Finder will copy by default. This is when these modifiers
-    come in handy.
+<kbd>⌥</kbd>-drag to duplicate a file within a single folder.)
 
 In Finder, hold <kbd>⌥</kbd> to **Get Info** on all selected items in one
 <i>Inspector</i> window, rather than in a barrage of individual <i>Info</i>
@@ -114,18 +110,11 @@ columns equally.
 
 ## Custom icons
 
-Change the icon of any Finder item: Copy any image or `.icns` file[^icns],
-**Get&nbsp;Info** on any item in Finder, click to select the icon in the top
-left, and paste! Or simply drag & drop and image or `.icns` onto the icon.
-
-[^icns]:
-    `.icns` is the
-    <a href="https://en.wikipedia.org/wiki/Apple_Icon_Image_format" target="_blank">Apple
-    Icon Image format</a>, which is used for icons macOS-wide. It’s basically
-    just a container of an icon at different sizes. Why not just scale one
-    image? Designers can use
-    <a href="https://developers.google.com/fonts/docs/material_symbols#opsz_axis" target="_blank"><i>optical
-    sizing</i></a> to optimise the “same” icon for display at different sizes.
+Change the icon of any Finder item: Copy any image or
+{% footnoteref 'icns', '<code>.icns</code> is the <a href="https://en.wikipedia.org/wiki/Apple_Icon_Image_format" target="_blank">Apple Icon Image format</a>, which is used for icons macOS-wide. It’s basically just a container of an icon at different sizes. Why not just scale one image? Designers can use <a href="https://developers.google.com/fonts/docs/material_symbols#opsz_axis" target="_blank"><i>optical sizing</i></a> to optimise the “same” icon for display at different sizes.' %}`.icns`
+file{% endfootnoteref %}, **Get&nbsp;Info** on any item in Finder, click to
+select the icon in the top left, and paste! Or simply drag & drop and image or
+`.icns` onto the icon.
 
 ![](https://cdn.discordapp.com/attachments/818660821004845060/962141177077972993/Screenshot_2022-04-09T120319.png?ex=67dab30c&is=67d9618c&hm=8a4468473c223e5d631ab1b577e907ad8d619468f3de9910b6b2be6cfbf5bd37)
 
@@ -166,22 +155,14 @@ defaults delete com.apple.dock contents-immutable && killall Dock
 
 ## Terminal
 
-Drag and drop a folder onto the Terminal icon to open a terminal directly to
-that directory.[^openin]
+{% footnoteref 'open-in', 'This is just a special case of dropping a file (or folder) onto an app icon to open it in that app (either in the Dock, or in Finder).' %}Drag
+and drop a folder onto the Terminal icon to open a terminal directly to that
+directory.{% endfootnoteref %}
 
-[^openin]:
-    This is just a special case of dropping a file (or folder) onto an app icon
-    to open it in that app (either in the Dock, or in Finder).
-
-Relatedly, <kbd>⌘</kbd>-drag a folder onto a Terminal window to `cd` there
-without typing anything.[^iterm]
-
-[^iterm]:
-    This also works in [iTerm](https://iterm2.com). Though Terminal is a
-    perfectly adequate terminal emulator, if you’d like a few more bells and
-    whistles, iTerm is worth looking at. As is [Warp](https://www.warp.dev), but
-    as of March&nbsp;2025, Warp doesn’t support this <kbd>⌘</kbd>-drag shortcut.
-    Criminal.
+Relatedly,
+{% footnoteref 'iterm', 'This also works in <a href="https://iterm2.com" target="_blank">iTerm<a>. Though Terminal is a perfectly adequate terminal emulator, if you’d like a few more bells and whistles, iTerm is worth looking at. As is <a href="https://www.warp.dev" target="_blank">Warp</a>, but as of March&nbsp;2025, Warp doesn’t support this <kbd>⌘</kbd>-drag shortcut. Criminal.' %}<kbd>⌘</kbd>-drag
+a folder onto a Terminal window to `cd` there without typing
+anything.{% endfootnoteref%}
 
 ## Network quality
 

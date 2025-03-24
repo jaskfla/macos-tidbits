@@ -227,7 +227,9 @@
 }
 
 @layer base {
-	* {
+	*,
+	*::before,
+	*::after {
 		font-feature-settings: 'case' var(--ot-case, off),
 			'sinf' var(--ot-sinf, off), 'ss01' var(--ot-open-six-and-nine, off),
 			'ss02' var(--ot-open-4, off), 'ss04' var(--ot-alt-currency-symbols, off),
@@ -342,13 +344,16 @@
 		}
 	}
 
-	:is(article, .flow) > * + * {
+	:is(article, .flow, .footnotes__list) > * + * {
 		margin-block-start: var(--flow-space, 1.5em);
 	}
 
 	a {
-		--underline-opacity: 30%;
 		color: inherit;
+	}
+
+	a:not(.footnotes__ref) {
+		--underline-opacity: 30%;
 		text-decoration-color: oklch(75% 0.17 254 / 35%);
 		text-decoration-skip-ink: none;
 		text-decoration-thickness: 1ex;
@@ -389,7 +394,7 @@
 		padding-inline: 0.3rem;
 	}
 
-	footer {
+	footer:not(.footnotes) {
 		background-color: oklch(from var(--color-fg) l c h / 6%);
 		box-shadow: var(--highlight-shadow);
 		border-start-end-radius: 2rem;
@@ -443,6 +448,54 @@
 
 	s {
 		color: oklch(from currentcolor l c h / 55%);
+	}
+
+	/* Footnotes */
+	main {
+		counter-reset: --footnotes;
+	}
+
+	.footnotes__ref {
+		text-decoration-line: underline;
+		text-decoration-color: oklch(100% 0 0 / 24%);
+		text-decoration-style: dotted;
+		&::after {
+			--ot-open-4: on;
+			content: '(' counter(--footnotes) ')';
+			counter-increment: --footnotes;
+			font-variant-position: super;
+			letter-spacing: 0.08em;
+			text-decoration-color: oklch(75% 0.17 254 / 35%);
+			text-decoration-line: underline;
+			text-decoration-skip-ink: none;
+			text-decoration-thickness: 1cap;
+			text-underline-offset: -1.075em;
+			transition: text-decoration-color 200ms ease;
+		}
+		&:hover:not(:active)::after {
+			text-decoration-color: oklch(100% 0 0 / 26.25%);
+		}
+		&:active::after {
+			text-decoration-color: oklch(90% 0 0 / 26.25%);
+		}
+	}
+
+	.footnotes {
+		font-size: 0.85rem;
+	}
+	.footnotes__title:not(:focus):not(:active) {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+	.footnotes__list-item {
+		/* font-family: var(--font-mono); */
+		/* font-weight: 500; */
+		color: oklch(from currentcolor l c h / 88%);
 	}
 }
 

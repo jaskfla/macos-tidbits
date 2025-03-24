@@ -1,4 +1,5 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
+import footnotes from 'eleventy-plugin-footnotes';
 import { minify } from 'html-minifier-terser';
 
 const SOURCE_DIR = 'src';
@@ -8,6 +9,10 @@ export default (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/style`);
 	eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/robots.txt`);
 
+	eleventyConfig.addPlugin(footnotes, {
+		baseClass: 'footnotes',
+		classes: ['flow'],
+	});
 	eleventyConfig.addPlugin(syntaxHighlight);
 
 	eleventyConfig.addTransform('htmlmin', function (content) {
