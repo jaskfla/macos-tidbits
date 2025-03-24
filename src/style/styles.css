@@ -279,7 +279,6 @@
 			linear-gradient(
 				in oklab to bottom,
 				var(--gradient-color-start) var(--gradient-stop-start),
-				var(--gradient-color-mid) var(--gradient-stop-mid),
 				var(--gradient-color-end) var(--gradient-stop-end)
 			);
 		background-blend-mode: normal, light-dark(darken, lighten), normal;
