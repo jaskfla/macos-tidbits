@@ -309,7 +309,8 @@
 		}
 		letter-spacing: 0.025em;
 		line-height: 1.65;
-		font-size: 112.5%;
+		/* 18px @ 320px → 21px @ 800px */
+		font-size: clamp(112.5%, 87.5% + 0.625vw, 131.25%);
 	}
 
 	/* TODO: Refactor to grid track */
