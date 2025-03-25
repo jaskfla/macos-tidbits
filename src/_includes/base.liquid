@@ -6,6 +6,7 @@
 
 		<link rel="preload" href="/style/styles.css" as="style" crossorigin />
 		<link rel="stylesheet" media="all" href="/style/styles.css" />
+		<script src="/scripts/heading-anchors.js" type="module"></script>
 
 		<title>macOS Tidbits</title>
 
@@ -42,8 +43,10 @@
 			<p>{{ metadata.description }}</p>
 		</header>
 		<hr />
-		<main class="flow">
-			{{ content }}
+		<main>
+			<heading-anchors class="flow" content="⎇" style="display: contents">
+				{{ content }}
+			</heading-anchors>
 			{% footnotes %}
 		</main>
 		<footer>

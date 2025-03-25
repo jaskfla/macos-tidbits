@@ -441,6 +441,18 @@
 		color: oklch(from currentcolor l c h / 55%);
 	}
 
+	/* Heading anchors */
+	heading-anchors:not(:defined) :is(h2, h3, h4, h5, h6)::after {
+		content: '⎇';
+		padding-block: 0;
+		padding-inline: 0.25em;
+		visibility: hidden;
+	}
+	heading-anchors .ha {
+		--flow-space: 0;
+		transition-property: opacity;
+	}
+
 	/* Footnotes */
 	main {
 		counter-reset: --footnotes;
