@@ -193,8 +193,9 @@ anything.{% endfootnoteref%}
 ## Network quality
 
 Test your network capacity without any third party things (like
-<a href="https://www.speedtest.net" rel="external" target="_blank">speedtest.net</a>
-or <a href="https://www.fast.com" rel="external" target="_blank">fast.com</a>)
+<a href="https://www.speedtest.net" rel="external nofollow" target="_blank">speedtest.net</a>
+or
+<a href="https://www.fast.com" rel="external nofollow" target="_blank">fast.com</a>)
 by running `networkQuality` from the command line, optionally using the **`-v`**
 flag for ~~_verbose output_~~ _very nerdy details_.
 
