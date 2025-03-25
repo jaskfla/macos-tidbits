@@ -462,7 +462,7 @@
 
 	.footnotes__ref {
 		text-decoration-line: underline;
-		text-decoration-color: oklch(100% 0 0 / 24%);
+		text-decoration-color: oklch(from currentcolor l c h / 24%);
 		text-decoration-style: dotted;
 		&::after {
 			--ot-open-4: on;
