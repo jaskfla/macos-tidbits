@@ -281,13 +281,13 @@
 			oklch(from var(--gradient-color-end) l c h / var(--noise-suppress))
 				var(--gradient-stop-end)
 		);
+		background-blend-mode: normal, light-dark(darken, lighten), normal;
 		background-image: var(--noise-mask), var(--noise-image),
 			linear-gradient(
 				in oklab to bottom,
 				var(--gradient-color-start) var(--gradient-stop-start),
 				var(--gradient-color-end) var(--gradient-stop-end)
 			);
-		background-blend-mode: normal, light-dark(darken, lighten), normal;
 
 		/* Type */
 		--ot-alt-currency-symbols: on;
