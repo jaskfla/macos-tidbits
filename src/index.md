@@ -106,7 +106,14 @@ Hold <kbd>⌥</kbd> when closing a tab to close all other tabs instead.
 In any standard column view (e.g.&nbsp;Finder), hold <kbd>⌥</kbd> to resize all
 columns equally.
 
-![](https://cdn.discordapp.com/attachments/818660821004845060/986501637088641094/Screenshot_2022-06-15T172320.gif?ex=67dafdfe&is=67d9ac7e&hm=4c1e02d50e8d91ac02ddbdb147a7e6ededeee67654f371d528d7c5a124442207)
+<picture>
+  <source src="/images/column-view-resize.gif" type="image/gif">
+  <img
+    alt="Screen recording of every column in a Finder window being simultaneously resized while the cursor is dragged left and right."
+    src="/images/column-view-resize.gif"
+    width="2000"
+    height="675" />
+</picture>
 
 ## Custom icons
 
@@ -116,7 +123,15 @@ file{% endfootnoteref %}, **Get&nbsp;Info** on any item in Finder, click to
 select the icon in the top left, and paste! Or simply drag & drop and image or
 `.icns` onto the icon.
 
-![](https://cdn.discordapp.com/attachments/818660821004845060/962141177077972993/Screenshot_2022-04-09T120319.png?ex=67dab30c&is=67d9618c&hm=8a4468473c223e5d631ab1b577e907ad8d619468f3de9910b6b2be6cfbf5bd37)
+<picture>
+  <source src="/images/custom-icons.png" type="image/png">
+  <img
+    alt="Screenshot of an Info pane for a removable drive. The file icon in the top left has a blue outline, indicating it is selected. The screenshot is annotated with an arrow pointing to the file icon, with the label “Drag and drop; or click then command-V”."
+    src="/images/custom-icons.png"
+    width="1000"
+    height="337.5"
+    style="--flow-space: 0" />
+</picture>
 
 Relatedly, you can even copy the icon from one file’s <i>Info</i> panel to paste
 into another.
@@ -124,7 +139,14 @@ into another.
 Also relatedly, a bunch of the system icons live in
 <code style="word-break: break-all">/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/</code>.
 
-![](https://cdn.discordapp.com/attachments/818660821004845060/962141380434616320/Screenshot_2022-04-09T120407.png?ex=67dab33c&is=67d961bc&hm=c0841ebdfbc0a84a0918e757f22755e3550a2032fba278e7c6e1a75ef600b05e)
+<picture>
+  <source src="/images/folder-of-icons.png" type="image/png">
+  <img
+    alt="Screenshot of a folder in Finder called “Resources” full, showing a few dozen of the 312 items in that folder. All the visible files are ICNS files of icons used throughout macOS, such as those for FileVault, the Downloads Folder, a font file, a kernel extension, a Time Machine drive, and more."
+    src="/images/folder-of-icons.png"
+    width="1024"
+    height="703" />
+</picture>
 
 ## Spelling dictionary
 

@@ -344,7 +344,8 @@
 		}
 	}
 
-	:is(article, .flow, .footnotes__list) > * + * {
+	:is(article, .flow, .footnotes__list) > * + *,
+	:is(article, .flow, .footnotes__list) > * + picture > img {
 		margin-block-start: var(--flow-space, 1.5em);
 	}
 
