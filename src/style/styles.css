@@ -235,6 +235,10 @@
 			'ss02' var(--ot-open-4, off), 'ss04' var(--ot-alt-currency-symbols, off),
 			'ss06' var(--ot-legible, off), 'cv06' var(--ot-alt-l, off),
 			'cv07' var(--ot-single-story-a, off);
+		scroll-margin-bottom: calc(env(safe-area-inset-bottom, 0) + 4rem);
+		scroll-margin-left: calc(env(safe-area-inset-left, 0) + 4rem);
+		scroll-margin-right: calc(env(safe-area-inset-right, 0) + 4rem);
+		scroll-margin-top: calc(env(safe-area-inset-top, 0) + 4rem);
 	}
 
 	:root {
@@ -496,8 +500,6 @@
 	}
 	.footnotes__list-item {
 		color: oklch(from currentcolor l c h / 80%);
-		scroll-margin-bottom: calc(env(safe-area-inset-bottom, 0) + 2rem);
-		scroll-margin-top: calc(env(safe-area-inset-top, 0) + 2rem);
 	}
 }
 
