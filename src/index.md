@@ -32,7 +32,7 @@ When taking screenshots, hold <kbd>⌃</kbd> to copy the image instead saving it
 to your desktop.
 
 Relatedly, you can
-<a href="https://macos-defaults.com/screenshots/location.html" target="_blank">make
+<a href="https://macos-defaults.com/screenshots/location.html" rel="external" target="_blank">make
 screenshots save somewhere else</a>.
 
 When using <kbd>⇧</kbd><kbd>⌘</kbd><kbd>4</kbd> to take screenshots, press
@@ -43,7 +43,7 @@ When using <kbd>⇧</kbd><kbd>⌘</kbd><kbd>4</kbd> to take screenshots, press
   dialogues, alert windows, et al).
 
 Relatedly, you can
-<a href="https://macos-defaults.com/screenshots/disable-shadow.html" target="_blank">make
+<a href="https://macos-defaults.com/screenshots/disable-shadow.html" rel="external" target="_blank">make
 shadowless default</a> for window screenshots. Hold <kbd>⌥</kbd> to add the
 shadow.
 
@@ -120,7 +120,7 @@ columns equally.
 ## Custom icons
 
 Change the icon of any Finder item: Copy any image or
-{% footnoteref 'icns', '<code>.icns</code> is the <a href="https://en.wikipedia.org/wiki/Apple_Icon_Image_format" target="_blank">Apple Icon Image format</a>, which is used for icons macOS-wide. It’s basically just a container of an icon at different sizes. Why not just scale one image? Designers can use <a href="https://developers.google.com/fonts/docs/material_symbols#opsz_axis" target="_blank"><i>optical sizing</i></a> to optimise the “same” icon for display at different sizes.' %}`.icns`
+{% footnoteref 'icns', '<code>.icns</code> is the <a href="https://en.wikipedia.org/wiki/Apple_Icon_Image_format" rel="external" target="_blank">Apple Icon Image format</a>, which is used for icons macOS-wide. It’s basically just a container of an icon at different sizes. Why not just scale one image? Designers can use <a href="https://developers.google.com/fonts/docs/material_symbols#opsz_axis" rel="external" target="_blank"><i>optical sizing</i></a> to optimise the “same” icon for display at different sizes.' %}`.icns`
 file{% endfootnoteref %}, **Get&nbsp;Info** on any item in Finder, click to
 select the icon in the top left, and paste! Or simply drag & drop and image or
 `.icns` onto the icon.
@@ -184,17 +184,17 @@ and drop a folder onto the Terminal icon to open a terminal directly to that
 directory.{% endfootnoteref %}
 
 Relatedly,
-{% footnoteref 'iterm', 'This also works in <a href="https://iterm2.com" target="_blank">iTerm<a>. Though Terminal is a perfectly adequate terminal emulator, if you’d like a few more bells and whistles, iTerm is worth looking at. As is <a href="https://www.warp.dev" target="_blank">Warp</a>, but as of March&nbsp;2025, Warp doesn’t support this <kbd>⌘</kbd>-drag shortcut. Criminal.' %}<kbd>⌘</kbd>-drag
+{% footnoteref 'iterm', 'This also works in <a href="https://iterm2.com" rel="external" target="_blank">iTerm<a>. Though Terminal is a perfectly adequate terminal emulator, if you’d like a few more bells and whistles, iTerm is worth looking at. As is <a href="https://www.warp.dev" rel="external" target="_blank">Warp</a>, but as of March&nbsp;2025, Warp doesn’t support this <kbd>⌘</kbd>-drag shortcut. Criminal.' %}<kbd>⌘</kbd>-drag
 a folder onto a Terminal window to `cd` there without typing
 anything.{% endfootnoteref%}
 
 ## Network quality
 
 Test your network capacity without any third party things (like
-<a href="https://www.speedtest.net" target="_blank">speedtest.net</a> or
-<a href="https://www.fast.com" target="_blank">fast.com</a>) by running
-`networkQuality` from the command line, optionally using the **`-v`** flag for
-~~_verbose output_~~ _very nerdy details_.
+<a href="https://www.speedtest.net" rel="external" target="_blank">speedtest.net</a>
+or <a href="https://www.fast.com" rel="external" target="_blank">fast.com</a>)
+by running `networkQuality` from the command line, optionally using the **`-v`**
+flag for ~~_verbose output_~~ _very nerdy details_.
 
 ```sh
 > networkQuality
