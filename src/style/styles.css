@@ -465,15 +465,15 @@
 			counter-increment: --footnotes;
 			font-variant-position: super;
 			letter-spacing: 0.08em;
-			text-decoration-color: oklch(75% 0.17 254 / 35%);
+			text-decoration-color: transparent;
 			text-decoration-line: underline;
 			text-decoration-skip-ink: none;
 			text-decoration-thickness: 1cap;
 			text-underline-offset: -1.075em;
-			transition: text-decoration-color 200ms ease;
+			transition: text-decoration-color 120ms ease;
 		}
 		&:hover:not(:active)::after {
-			text-decoration-color: oklch(100% 0 0 / 26.25%);
+			text-decoration-color: oklch(75% 0.17 254 / 35%);
 		}
 		&:active::after {
 			text-decoration-color: oklch(90% 0 0 / 26.25%);
@@ -482,6 +482,7 @@
 
 	.footnotes {
 		font-size: 0.85rem;
+		margin-block-start: 10rem;
 	}
 	.footnotes__title:not(:focus):not(:active) {
 		clip: rect(0 0 0 0);
@@ -493,9 +494,9 @@
 		width: 1px;
 	}
 	.footnotes__list-item {
-		/* font-family: var(--font-mono); */
-		/* font-weight: 500; */
-		color: oklch(from currentcolor l c h / 88%);
+		color: oklch(from currentcolor l c h / 80%);
+		scroll-margin-bottom: calc(env(safe-area-inset-bottom, 0) + 2rem);
+		scroll-margin-top: calc(env(safe-area-inset-top, 0) + 2rem);
 	}
 }
 
