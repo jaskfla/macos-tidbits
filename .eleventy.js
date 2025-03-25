@@ -5,14 +5,12 @@ import { minify } from 'html-minifier-terser';
 
 const SOURCE_DIR = 'src';
 
+const staticFiles = ['/images', '/robots.txt', '/scripts', '/style'];
+
 export default (eleventyConfig) => {
-	eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/images`);
-	eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/style`);
-	eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}/robots.txt`);
-	eleventyConfig.addPassthroughCopy({
-		'node_modules/@zachleat/heading-anchors/heading-anchors.js':
-			'scripts/heading-anchors.js',
-	});
+	for (const file of staticFiles) {
+		eleventyConfig.addPassthroughCopy(`${SOURCE_DIR}${file}`);
+	}
 
 	eleventyConfig.addPlugin(footnotes, {
 		baseClass: 'footnotes',
