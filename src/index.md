@@ -32,7 +32,8 @@ When taking screenshots, hold <kbd>⌃</kbd> to copy the image instead saving it
 to your desktop.
 
 Relatedly, you can
-[make screenshots save somewhere else](https://macos-defaults.com/screenshots/location.html).
+<a href="https://macos-defaults.com/screenshots/location.html" target="_blank">make
+screenshots save somewhere else</a>.
 
 When using <kbd>⇧</kbd><kbd>⌘</kbd><kbd>4</kbd> to take screenshots, press
 <kbd>space</kbd> to capture by window. In this mode, you can also:
@@ -42,8 +43,9 @@ When using <kbd>⇧</kbd><kbd>⌘</kbd><kbd>4</kbd> to take screenshots, press
   dialogues, alert windows, et al).
 
 Relatedly, you can
-[make shadowless default](https://macos-defaults.com/screenshots/disable-shadow.html)
-for window screenshots. Hold <kbd>⌥</kbd> to add the shadow.
+<a href="https://macos-defaults.com/screenshots/disable-shadow.html" target="_blank">make
+shadowless default</a> for window screenshots. Hold <kbd>⌥</kbd> to add the
+shadow.
 
 ## Menu Bar
 
