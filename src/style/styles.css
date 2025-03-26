@@ -241,6 +241,10 @@
 		scroll-margin-top: calc(env(safe-area-inset-top, 0) + 4rem);
 	}
 
+	*:focus-visible {
+		outline: var(--hairline) solid oklch(from var(--color-fg) l c h / 75%);
+	}
+
 	:root {
 		--color-fg: light-dark(oklch(15% 0.06 254 / 88%), oklch(100% 0 0 / 96%));
 
@@ -356,7 +360,7 @@
 			/* Browser takes alpha value taken from non-:visited state */
 			text-decoration-color: oklch(75% 0.17 326);
 		}
-		&:hover:not(:active) {
+		&:is(:focus-visible, :hover):not(:active) {
 			text-decoration-color: oklch(100% 0 0 / 26.25%);
 		}
 		&:active {
@@ -489,7 +493,7 @@
 		font-size: 0.85rem;
 		margin-block-start: 10rem;
 	}
-	.footnotes__title:not(:focus):not(:active) {
+	.footnotes__title:not(:focus-visible):not(:active) {
 		clip: rect(0 0 0 0);
 		clip-path: inset(50%);
 		height: 1px;
