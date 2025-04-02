@@ -227,12 +227,22 @@
 }
 
 @layer base {
-	* {
+	*,
+	*::before,
+	*::after {
 		font-feature-settings: 'case' var(--ot-case, off),
 			'sinf' var(--ot-sinf, off), 'ss01' var(--ot-open-six-and-nine, off),
 			'ss02' var(--ot-open-4, off), 'ss04' var(--ot-alt-currency-symbols, off),
 			'ss06' var(--ot-legible, off), 'cv06' var(--ot-alt-l, off),
 			'cv07' var(--ot-single-story-a, off);
+		scroll-margin-bottom: calc(env(safe-area-inset-bottom, 0) + 4rem);
+		scroll-margin-left: calc(env(safe-area-inset-left, 0) + 4rem);
+		scroll-margin-right: calc(env(safe-area-inset-right, 0) + 4rem);
+		scroll-margin-top: calc(env(safe-area-inset-top, 0) + 4rem);
+	}
+
+	*:focus-visible {
+		outline: var(--hairline) solid oklch(from var(--color-fg) l c h / 75%);
 	}
 
 	:root {
@@ -275,21 +285,7 @@
 			oklch(from var(--gradient-color-end) l c h / var(--noise-suppress))
 				var(--gradient-stop-end)
 		);
-		background-image: var(--noise-mask), var(--noise-image),
-			linear-gradient(
-				in oklab to bottom,
-				var(--gradient-color-start) var(--gradient-stop-start),
-				var(--gradient-color-end) var(--gradient-stop-end)
-			);
 		background-blend-mode: normal, light-dark(darken, lighten), normal;
-
-		--noise-mask: linear-gradient(
-			in oklab to bottom,
-			oklch(from var(--gradient-color-start) l c h / var(--noise-suppress))
-				var(--gradient-stop-start),
-			oklch(from var(--gradient-color-end) l c h / var(--noise-suppress))
-				var(--gradient-stop-end)
-		);
 		background-image: var(--noise-mask), var(--noise-image),
 			linear-gradient(
 				in oklab to bottom,
@@ -342,13 +338,17 @@
 		}
 	}
 
-	:is(article, .flow) > * + * {
+	:is(article, .flow, .footnotes__list) > * + *,
+	:is(article, .flow, .footnotes__list) > * + picture > img {
 		margin-block-start: var(--flow-space, 1.5em);
 	}
 
 	a {
-		--underline-opacity: 30%;
 		color: inherit;
+	}
+
+	a:not(.footnotes__ref) {
+		--underline-opacity: 30%;
 		text-decoration-color: oklch(75% 0.17 254 / 35%);
 		text-decoration-skip-ink: none;
 		text-decoration-thickness: 1ex;
@@ -360,7 +360,7 @@
 			/* Browser takes alpha value taken from non-:visited state */
 			text-decoration-color: oklch(75% 0.17 326);
 		}
-		&:hover:not(:active) {
+		&:is(:focus-visible, :hover):not(:active) {
 			text-decoration-color: oklch(100% 0 0 / 26.25%);
 		}
 		&:active {
@@ -389,7 +389,7 @@
 		padding-inline: 0.3rem;
 	}
 
-	footer {
+	footer:not(.footnotes) {
 		background-color: oklch(from var(--color-fg) l c h / 6%);
 		box-shadow: var(--highlight-shadow);
 		border-start-end-radius: 2rem;
@@ -443,6 +443,67 @@
 
 	s {
 		color: oklch(from currentcolor l c h / 55%);
+	}
+}
+
+@layer component {
+	/* Heading anchors */
+	heading-anchors:not(:defined) :is(h2, h3, h4, h5, h6)::after {
+		content: '⎇';
+		padding-block: 0;
+		padding-inline: 0.25em;
+		visibility: hidden;
+	}
+	heading-anchors .ha {
+		--flow-space: 0;
+		transition-property: opacity;
+	}
+
+	/* Footnotes */
+	main {
+		counter-reset: --footnotes;
+	}
+
+	.footnotes__ref {
+		text-decoration-line: underline;
+		text-decoration-color: oklch(from currentcolor l c h / 24%);
+		text-decoration-style: dotted;
+		&::after {
+			--ot-open-4: on;
+			content: '(' counter(--footnotes) ')';
+			counter-increment: --footnotes;
+			font-variant-position: super;
+			letter-spacing: 0.08em;
+			text-decoration-color: transparent;
+			text-decoration-line: underline;
+			text-decoration-skip-ink: none;
+			text-decoration-thickness: 1cap;
+			text-underline-offset: -1.075em;
+			transition: text-decoration-color 120ms ease;
+		}
+		&:hover:not(:active)::after {
+			text-decoration-color: oklch(75% 0.17 254 / 35%);
+		}
+		&:active::after {
+			text-decoration-color: oklch(90% 0 0 / 26.25%);
+		}
+	}
+
+	.footnotes {
+		font-size: 0.85rem;
+		margin-block-start: 10rem;
+	}
+	.footnotes__title:not(:focus-visible):not(:active) {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+	.footnotes__list-item {
+		color: oklch(from currentcolor l c h / 88%);
 	}
 }
 

@@ -6,6 +6,7 @@
 
 		<link rel="preload" href="/style/styles.css" as="style" crossorigin />
 		<link rel="stylesheet" media="all" href="/style/styles.css" />
+		<script src="/scripts/heading-anchors.js" type="module" defer></script>
 
 		<title>macOS Tidbits</title>
 
@@ -42,7 +43,12 @@
 			<p>{{ metadata.description }}</p>
 		</header>
 		<hr />
-		<main class="flow">{{ content }}</main>
+		<main>
+			<heading-anchors class="flow" content="⎇" style="display: contents">
+				{{ content }}
+			</heading-anchors>
+			{% footnotes %}
+		</main>
 		<footer>
 			<style>
 				@scope {
@@ -59,8 +65,8 @@
 			</style>
 			<p>
 				A li’l
-				<a href="{{ metadata.repoUrl }}" target="_blank">side project</a> by
-				<a href="https://lai.nz" target="_blank">Jasper</a>
+				<a href="{{ metadata.repoUrl }}" rel="external" target="_blank" >side project</a>, by
+				<a href="https://lai.nz" rel="external" target="_blank" >Jasper</a>
 			</p>
 			<p>No affiliation with the fruit company, though</p>
 		</footer>

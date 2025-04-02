@@ -12,6 +12,7 @@
 	"devDependencies": {
 		"@11ty/eleventy": "^3.0.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+		"eleventy-plugin-footnotes": "^0.11.0",
 		"html-minifier-terser": "^7.2.0",
 		"rimraf": "^6.0.1"
 	},
@@ -19,7 +20,7 @@
 		"url": "https://github.com/jaskfla/macos-tidbits/issues",
 		"email": "j @ lai . nz"
 	},
-	"homepage": "https://lai.nz",
+	"homepage": "https://macos-tidbits.lai.nz",
 	"license": "UNLICENSED",
 	"private": true,
 	"scripts": {

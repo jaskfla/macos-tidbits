@@ -3,6 +3,8 @@ title: macOS Tidbits
 layout: base.liquid
 ---
 
+## Window interactions
+
 When <kbd>⌘</kbd><kbd>↹</kbd>-ing between apps, mouse over an app and release
 <kbd>⌘</kbd> to switch to that app without having to spam <kbd>↹</kbd> or
 <kbd>⇧</kbd><kbd>↹</kbd>.
@@ -32,7 +34,8 @@ When taking screenshots, hold <kbd>⌃</kbd> to copy the image instead saving it
 to your desktop.
 
 Relatedly, you can
-[make screenshots save somewhere else](https://macos-defaults.com/screenshots/location.html).
+<a href="https://macos-defaults.com/screenshots/location.html" rel="external" target="_blank">make
+screenshots save somewhere else</a>.
 
 When using <kbd>⇧</kbd><kbd>⌘</kbd><kbd>4</kbd> to take screenshots, press
 <kbd>space</kbd> to capture by window. In this mode, you can also:
@@ -42,8 +45,9 @@ When using <kbd>⇧</kbd><kbd>⌘</kbd><kbd>4</kbd> to take screenshots, press
   dialogues, alert windows, et al).
 
 Relatedly, you can
-[make shadowless default](https://macos-defaults.com/screenshots/disable-shadow.html)
-for window screenshots. Hold <kbd>⌥</kbd> to add the shadow.
+<a href="https://macos-defaults.com/screenshots/disable-shadow.html" rel="external" target="_blank">make
+shadowless default</a> for window screenshots. Hold <kbd>⌥</kbd> to add the
+shadow.
 
 ## Menu Bar
 
@@ -79,16 +83,12 @@ Control Strip.)
 
 ## Finder
 
-When using drag & drop to copy/move a file, hold <kbd>⌘</kbd> to force Finder to
-**move** the file, or hold <kbd>⌥</kbd> to force Finder to
+When using
+{% footnoteref 'finder-drag-drop', 'By default, macOS will move the file if you’re dragging within the same drive (well, technically, the same partition). If you drag to a location on a different drive, Finder will copy by default. This is when these modifiers come in handy.' %}
+drag & drop to copy/move a file{% endfootnoteref %}, hold <kbd>⌘</kbd> to force
+Finder to **move** the file, or hold <kbd>⌥</kbd> to force Finder to
 <strong style="cursor: copy">copy</strong> the file. (Yes, you can
-<kbd>⌥</kbd>-drag to duplicate a file within a single folder.)[^finderdragdrop]
-
-[^finderdragdrop]:
-    By default, macOS will move the file if you’re dragging within the same
-    drive (well, technically, the same partition). If you drag to a location on
-    a different drive, Finder will copy by default. This is when these modifiers
-    come in handy.
+<kbd>⌥</kbd>-drag to duplicate a file within a single folder.)
 
 In Finder, hold <kbd>⌥</kbd> to **Get Info** on all selected items in one
 <i>Inspector</i> window, rather than in a barrage of individual <i>Info</i>
@@ -110,24 +110,32 @@ Hold <kbd>⌥</kbd> when closing a tab to close all other tabs instead.
 In any standard column view (e.g.&nbsp;Finder), hold <kbd>⌥</kbd> to resize all
 columns equally.
 
-![](https://cdn.discordapp.com/attachments/818660821004845060/986501637088641094/Screenshot_2022-06-15T172320.gif?ex=67dafdfe&is=67d9ac7e&hm=4c1e02d50e8d91ac02ddbdb147a7e6ededeee67654f371d528d7c5a124442207)
+<picture>
+  <source src="/images/column-view-resize.gif" type="image/gif">
+  <img
+    alt="Screen recording of every column in a Finder window being simultaneously resized while the cursor is dragged left and right."
+    src="/images/column-view-resize.gif"
+    width="2000"
+    height="675" />
+</picture>
 
 ## Custom icons
 
-Change the icon of any Finder item: Copy any image or `.icns` file[^icns],
-**Get&nbsp;Info** on any item in Finder, click to select the icon in the top
-left, and paste! Or simply drag & drop and image or `.icns` onto the icon.
+Change the icon of any Finder item: Copy any image or
+{% footnoteref 'icns', '<code>.icns</code> is the <a href="https://en.wikipedia.org/wiki/Apple_Icon_Image_format" rel="external" target="_blank">Apple Icon Image format</a>, which is used for icons macOS-wide. It’s basically just a container of an icon at different sizes. Why not just scale one image? Designers can use <a href="https://developers.google.com/fonts/docs/material_symbols#opsz_axis" rel="external" target="_blank"><i>optical sizing</i></a> to optimise the “same” icon for display at different sizes.' %}`.icns`
+file{% endfootnoteref %}, **Get&nbsp;Info** on any item in Finder, click to
+select the icon in the top left, and paste! Or simply drag & drop and image or
+`.icns` onto the icon.
 
-[^icns]:
-    `.icns` is the
-    <a href="https://en.wikipedia.org/wiki/Apple_Icon_Image_format" target="_blank">Apple
-    Icon Image format</a>, which is used for icons macOS-wide. It’s basically
-    just a container of an icon at different sizes. Why not just scale one
-    image? Designers can use
-    <a href="https://developers.google.com/fonts/docs/material_symbols#opsz_axis" target="_blank"><i>optical
-    sizing</i></a> to optimise the “same” icon for display at different sizes.
-
-![](https://cdn.discordapp.com/attachments/818660821004845060/962141177077972993/Screenshot_2022-04-09T120319.png?ex=67dab30c&is=67d9618c&hm=8a4468473c223e5d631ab1b577e907ad8d619468f3de9910b6b2be6cfbf5bd37)
+<picture>
+  <source src="/images/custom-icons.png" type="image/png">
+  <img
+    alt="Screenshot of an Info pane for a removable drive. The file icon in the top left has a blue outline, indicating it is selected. The screenshot is annotated with an arrow pointing to the file icon, with the label “Drag and drop; or click then command-V”."
+    src="/images/custom-icons.png"
+    width="1000"
+    height="337.5"
+    style="--flow-space: 0" />
+</picture>
 
 Relatedly, you can even copy the icon from one file’s <i>Info</i> panel to paste
 into another.
@@ -135,7 +143,14 @@ into another.
 Also relatedly, a bunch of the system icons live in
 <code style="word-break: break-all">/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/</code>.
 
-![](https://cdn.discordapp.com/attachments/818660821004845060/962141380434616320/Screenshot_2022-04-09T120407.png?ex=67dab33c&is=67d961bc&hm=c0841ebdfbc0a84a0918e757f22755e3550a2032fba278e7c6e1a75ef600b05e)
+<picture>
+  <source src="/images/folder-of-icons.png" type="image/png">
+  <img
+    alt="Screenshot of a folder in Finder called “Resources” full, showing a few dozen of the 312 items in that folder. All the visible files are ICNS files of icons used throughout macOS, such as those for FileVault, the Downloads Folder, a font file, a kernel extension, a Time Machine drive, and more."
+    src="/images/folder-of-icons.png"
+    width="1024"
+    height="703" />
+</picture>
 
 ## Spelling dictionary
 
@@ -166,30 +181,23 @@ defaults delete com.apple.dock contents-immutable && killall Dock
 
 ## Terminal
 
-Drag and drop a folder onto the Terminal icon to open a terminal directly to
-that directory.[^openin]
+{% footnoteref 'open-in', 'This is just a special case of dropping a file (or folder) onto an app icon to open it in that app (either in the Dock, or in Finder).' %}Drag
+and drop a folder onto the Terminal icon to open a terminal directly to that
+directory.{% endfootnoteref %}
 
-[^openin]:
-    This is just a special case of dropping a file (or folder) onto an app icon
-    to open it in that app (either in the Dock, or in Finder).
-
-Relatedly, <kbd>⌘</kbd>-drag a folder onto a Terminal window to `cd` there
-without typing anything.[^iterm]
-
-[^iterm]:
-    This also works in [iTerm](https://iterm2.com). Though Terminal is a
-    perfectly adequate terminal emulator, if you’d like a few more bells and
-    whistles, iTerm is worth looking at. As is [Warp](https://www.warp.dev), but
-    as of March&nbsp;2025, Warp doesn’t support this <kbd>⌘</kbd>-drag shortcut.
-    Criminal.
+Relatedly,
+{% footnoteref 'iterm', 'This also works in <a href="https://iterm2.com" rel="external" target="_blank">iTerm<a>. Though Terminal is a perfectly adequate terminal emulator, if you’d like a few more bells and whistles, iTerm is worth looking at. As is <a href="https://www.warp.dev" rel="external" target="_blank">Warp</a>, but as of March&nbsp;2025, Warp doesn’t support this <kbd>⌘</kbd>-drag shortcut. Criminal.' %}<kbd>⌘</kbd>-drag
+a folder onto a Terminal window to `cd` there without typing
+anything.{% endfootnoteref%}
 
 ## Network quality
 
 Test your network capacity without any third party things (like
-<a href="https://www.speedtest.net" target="_blank">speedtest.net</a> or
-<a href="https://www.fast.com" target="_blank">fast.com</a>) by running
-`networkQuality` from the command line, optionally using the **`-v`** flag for
-~~_verbose output_~~ _very nerdy details_.
+<a href="https://www.speedtest.net" rel="external nofollow" target="_blank">speedtest.net</a>
+or
+<a href="https://www.fast.com" rel="external nofollow" target="_blank">fast.com</a>)
+by running `networkQuality` from the command line, optionally using the **`-v`**
+flag for ~~_verbose output_~~ _very nerdy details_.
 
 ```sh
 > networkQuality
