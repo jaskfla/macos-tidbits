@@ -23,11 +23,6 @@ Triple-click to select a paragraph.
 Relatedly, double-click and drag to select word-by-word. Triple-click and drag
 to select paragraph-by-paragraph.
 
-## Right-click with keyboard
-
-<kbd>⌃</kbd><kbd>⏎</kbd> to right-click whatever is currently focused. (Though,
-strictly speaking, there’s no clicking involved here.)
-
 ## Screenshots
 
 When taking screenshots, hold <kbd>⌃</kbd> to copy the image instead saving it
@@ -118,6 +113,11 @@ columns equally.
     width="2000"
     height="675" />
 </picture>
+
+## Right-click with keyboard
+
+<kbd>⌃</kbd><kbd>⏎</kbd> to right-click whatever is currently focused. (Though,
+strictly speaking, there’s no clicking involved here.)
 
 ## Custom icons
 
