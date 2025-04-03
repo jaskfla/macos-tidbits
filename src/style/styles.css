@@ -353,8 +353,7 @@
 		text-decoration-skip-ink: none;
 		text-decoration-thickness: 1ex;
 		text-underline-offset: -0.75ex;
-		transition-property: text-decoration-color;
-		transition: 120ms ease;
+		transition: text-decoration-color 120ms ease;
 
 		&:visited {
 			/* Browser takes alpha value taken from non-:visited state */
