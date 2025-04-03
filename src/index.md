@@ -92,7 +92,7 @@ windows. This also works with <kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd> (instead 
 
 In any Save sheet, drag and drop a folder onto the sheet to navigate there in
 the Save sheet. Drag and drop a file to navigate there _and_ prepopulate the
-<i>Save As</i> field with its filename.
+<i>Save&nbsp;As</i> field with its filename.
 
 ## Tabs
 
