@@ -217,5 +217,3 @@ Downlink capacity: 225.857 Mbps
 Responsiveness: Low (485.706 milliseconds | 123 RPM)
 Idle Latency: 38.958 milliseconds | 1540 RPM
 ```
-
-<!-- ![](https://cdn.discordapp.com/attachments/818660821004845060/965064537030135818/Code_Snippet_2022-04-17T133926.png?ex=67dac9a3&is=67d97823&hm=b2fff70f7871625c6d9a48c7e8967e83f39c7e3667df325330de0308eb0dc37e) -->
