@@ -36,8 +36,8 @@ When using <kbd>⇧</kbd><kbd>⌘</kbd><kbd>4</kbd> to take screenshots, press
 <kbd>space</kbd> to capture by window. In this mode, you can also:
 
 - hold <kbd>⌥</kbd> to take the window screenshot sans-shadow; and/or
-- hold <kbd>⌘</kbd> to capture child views within a window (such as open/save
-  dialogues, alert windows, et al).
+- hold <kbd>⌘</kbd> to capture child views within a window (such as
+  New/Open/Save dialogues, alert windows, et al).
 
 Relatedly, you can
 <a href="https://macos-defaults.com/screenshots/disable-shadow.html" rel="external" target="_blank">make
@@ -93,6 +93,13 @@ windows. This also works with <kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd> (instead 
 In any Save sheet, drag and drop a folder onto the sheet to navigate there in
 the Save sheet. Drag and drop a file to navigate there _and_ prepopulate the
 <i>Save&nbsp;As</i> field with its filename.
+
+<p id="go-to-folder">
+  You may already know about the <strong>Go to Folder…</strong> menu item
+  (<kbd>⇧</kbd><kbd>⌘</kbd><kbd>G</kbd>) in a normal Finder window. This is even
+  quicker to invoke from an New/Open/Save dialogue: just hit <kbd>/</kbd>. (The
+  usual shortcut still works.)
+</p>
 
 ## Tabs
 
@@ -161,7 +168,8 @@ dictionary that you no longer want, just open up the file and delete the word.
 
 Relatedly, <kbd>⇧</kbd><kbd>⌘</kbd><kbd>G</kbd> in any Finder window and
 {% footnoteref 'pathname', 'If you really want, you <em>can</em> type it. 🤷' %}paste
-a pathname{% endfootnoteref %} to go straight to that file or folder.
+a pathname{% endfootnoteref %} to go straight to that file or folder. (See the
+[Go to folder…](#go-to-folder) tip.)
 
 ## Dock
 
