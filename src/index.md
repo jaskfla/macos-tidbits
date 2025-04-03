@@ -85,10 +85,10 @@ Control Strip.)
 
 When using
 {% footnoteref 'finder-drag-drop', 'By default, macOS will move the file if you’re dragging within the same drive (well, technically, the same partition). If you drag to a location on a different drive, Finder will copy by default. This is when these modifiers come in handy.' %}
-drag & drop to copy/move a file{% endfootnoteref %}, hold <kbd>⌘</kbd> to force
-Finder to **move** the file, or hold <kbd>⌥</kbd> to force Finder to
-<strong style="cursor: copy">copy</strong> the file. (Yes, you can
-<kbd>⌥</kbd>-drag to duplicate a file within a single folder.)
+drag & drop to copy/move a file, hold <kbd>⌘</kbd> to force Finder to **move**
+the file, or hold <kbd>⌥</kbd> to force Finder to
+<strong style="cursor: copy">copy</strong> the file.{% endfootnoteref %} (Yes,
+you can <kbd>⌥</kbd>-drag to duplicate a file within a single folder.)
 
 In Finder, hold <kbd>⌥</kbd> to **Get Info** on all selected items in one
 <i>Inspector</i> window, rather than in a barrage of individual <i>Info</i>
