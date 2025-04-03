@@ -124,7 +124,7 @@ strictly speaking, there’s no clicking involved here.)
 Change the icon of any Finder item: Copy any image or
 {% footnoteref 'icns', '<code>.icns</code> is the <a href="https://en.wikipedia.org/wiki/Apple_Icon_Image_format" rel="external" target="_blank">Apple Icon Image format</a>, which is used for icons macOS-wide. It’s basically just a container of an icon at different sizes. Why not just scale one image? Designers can use <a href="https://developers.google.com/fonts/docs/material_symbols#opsz_axis" rel="external" target="_blank"><i>optical sizing</i></a> to optimise the “same” icon for display at different sizes.' %}`.icns`
 file{% endfootnoteref %}, **Get&nbsp;Info** on any item in Finder, click to
-select the icon in the top left, and paste! Or simply drag & drop and image or
+select the icon in the top left, and paste! Or simply drag & drop an image or
 `.icns` onto the icon.
 
 <picture>
