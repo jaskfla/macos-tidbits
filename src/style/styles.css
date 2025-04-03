@@ -298,9 +298,9 @@
 		font-variant-alternates: styleset(legible);
 		color: var(--color-fg);
 		font-family: var(--font-body);
-		font-weight: 440;
+		font-weight: 450;
 		@media (prefers-color-scheme: dark) {
-			font-weight: 400;
+			font-weight: 410;
 		}
 		letter-spacing: 0.025em;
 		line-height: 1.65;
