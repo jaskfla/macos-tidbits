@@ -102,8 +102,8 @@ Hold <kbd>⌥</kbd> when closing a tab to close all other tabs instead.
 
 ## Column views
 
-In any standard column view (e.g.&nbsp;Finder), hold <kbd>⌥</kbd> to resize all
-columns equally.
+With any standard column view (such as in Finder), hold <kbd>⌥</kbd> to resize
+all columns equally.
 
 <picture>
   <source src="/images/column-view-resize.gif" type="image/gif">
