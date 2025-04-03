@@ -159,8 +159,9 @@ When macOS says you’ve spelled something wrong, and you right-click then choos
 `~/Library/Spelling/LocalDictionary` file. If you’ve added a word to your
 dictionary that you no longer want, just open up the file and delete the word.
 
-Relatedly, <kbd>⇧</kbd><kbd>⌘</kbd><kbd>G</kbd> in any Finder window to paste to
-go straight to the right folder.
+Relatedly, <kbd>⇧</kbd><kbd>⌘</kbd><kbd>G</kbd> in any Finder window and
+{% footnoteref 'pathname', 'If you really want, you <em>can</em> type it. 🤷' %}paste
+a pathname{% endfootnoteref %} to go straight to that file or folder.
 
 ## Dock
 
