@@ -17,7 +17,7 @@ into focus_.
 
 ## Text selection
 
-When using the cursor to select text, double-click to select a words.
+When using the cursor to select text, double-click to select a word.
 Triple-click to select a paragraph.
 
 Relatedly, double-click and drag to select word-by-word. Triple-click and drag
