@@ -175,6 +175,9 @@ a pathname{% endfootnoteref %} to go straight to that file or folder. (See the
 
 <kbd>⌘</kbd>-click items in the Dock to reveal them in Finder.
 
+Ditto in Spotlight, where <kbd>⌘</kbd><kbd>⏎</kbd> also works—and is probably
+more useful.
+
 Don’t want to accidentally add/remove apps from your Dock? Lock its contents by
 running:
 
