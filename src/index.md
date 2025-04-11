@@ -44,11 +44,11 @@ Relatedly, you can
 shadowless default</a> for window screenshots. Hold <kbd>⌥</kbd> to add the
 shadow.
 
-## Menu Bar
+## Menu bar
 
-<kbd>⌘</kbd>-drag to reorder icons in the Menu Bar.
+<kbd>⌘</kbd>-drag to reorder icons in the menu bar.
 
-Click and hold the Spotlight button in the Menu Bar to reset its location on
+Click and hold the Spotlight button in the menu bar to reset its location on
 screen.
 
 Any self-respecting Mac app opens the **Help** menu when you press
@@ -107,13 +107,39 @@ Middle-click a tab to close it.
 
 Hold <kbd>⌥</kbd> when closing a tab to close all other tabs instead.
 
+## Custom shortcuts
+
+For any menu item (that is, anything in the
+<a href="https://developer.apple.com/design/human-interface-guidelines/the-menu-bar"
+  rel='external'
+  target='_blank'>menu bar</a>), you can set a custom keyboard shortcut in
+[<i>System Settings<i> → <i>Keyboard</i>](x-apple.systempreferences:com.apple.Keyboard-Settings.extension)
+→ <i>Keyboard Shortcuts…</i> → <i>App Shortcuts</i>. Take care to spell the name
+of the command
+_exactly_&mdash;{% footnoteref 'ellipsis', 'The ellipsis&nbsp;(&nbsp;…&nbsp;) appears often, for which you should use <kbd>⌥</kbd><kbd>;</kbd> rather than approximating with three full stops&nbsp;(&nbsp;...&nbsp;).' %}including
+special characters.{% endfootnoteref %}
+
+<picture>
+  <source
+    srcset="/images/app-shortcuts~light.png"
+    media="(prefers-color-scheme: light)" />
+  <source
+    srcset="/images/app-shortcuts~dark.png"
+    media="(prefers-color-scheme: dark)" />
+  <img
+    alt="Screenshot of a modal in the Keyboard pane of the System Settings app. It has three fields: a dropdown for ‘Application’, a text field for ‘Menu title’ and a ‘Keyboard shortcut’ field."
+    src="/images/app-shortcuts~light.png"
+    width="827"
+    height="748" />
+</picture>
+
 ## Column views
 
 With any standard column view (such as in Finder), hold <kbd>⌥</kbd> to resize
 all columns equally.
 
 <picture>
-  <source src="/images/column-view-resize.gif" type="image/gif">
+  <source srcset="/images/column-view-resize.gif" type="image/gif">
   <img
     alt="Screen recording of every column in a Finder window being simultaneously resized while the cursor is dragged left and right."
     src="/images/column-view-resize.gif"
@@ -135,7 +161,7 @@ select the icon in the top left, and paste! Or simply drag & drop an image or
 `.icns` onto the icon.
 
 <picture>
-  <source src="/images/custom-icons.png" type="image/png">
+  <source srcset="/images/custom-icons.png" type="image/png">
   <img
     alt="Screenshot of an Info pane for a removable drive. The file icon in the top left has a blue outline, indicating it is selected. The screenshot is annotated with an arrow pointing to the file icon, with the label “Drag and drop; or click then command-V”."
     src="/images/custom-icons.png"
@@ -151,7 +177,7 @@ Also relatedly, a bunch of the system icons live in
 <code style="word-break: break-all">/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/</code>.
 
 <picture>
-  <source src="/images/folder-of-icons.png" type="image/png">
+  <source srcset="/images/folder-of-icons.png" type="image/png">
   <img
     alt="Screenshot of a folder in Finder called “Resources” full, showing a few dozen of the 312 items in that folder. All the visible files are ICNS files of icons used throughout macOS, such as those for FileVault, the Downloads Folder, a font file, a kernel extension, a Time Machine drive, and more."
     src="/images/folder-of-icons.png"
@@ -175,8 +201,8 @@ a pathname{% endfootnoteref %} to go straight to that file or folder. (See the
 
 <kbd>⌘</kbd>-click items in the Dock to reveal them in Finder.
 
-Ditto in Spotlight, where <kbd>⌘</kbd><kbd>⏎</kbd> also works—and is probably
-more useful.
+Ditto in Spotlight, where <kbd>⌘</kbd><kbd>⏎</kbd> also works&mdash;and is
+probably more useful.
 
 Don’t want to accidentally add/remove apps from your Dock? Lock its contents by
 running:
