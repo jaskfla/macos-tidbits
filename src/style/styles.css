@@ -502,7 +502,13 @@
 		width: 1px;
 	}
 	.footnotes__list-item {
+		border-radius: 0.33333333em;
 		color: oklch(from currentcolor l c h / 88%);
+	}
+	.footnotes__list-item:target {
+		background-color: oklch(
+			from light-dark(var(--color-fg), var(--gradient-color-start)) l c h / 6%
+		);
 	}
 }
 
