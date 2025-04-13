@@ -440,6 +440,16 @@
 		}
 	}
 
+	::target-text,
+	mark {
+		--highlight-color: oklch(0.75 0.17 100 / 35%);
+		--highlight-overshoot: 0.15em;
+		background-color: var(--highlight-color);
+		border-radius: calc(0.33333333em - var(--highlight-overshoot));
+		box-shadow: 0 0 0 var(--highlight-overshoot) var(--highlight-color);
+		color: currentcolor;
+	}
+
 	s {
 		color: oklch(from currentcolor l c h / 55%);
 	}
