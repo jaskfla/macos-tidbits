@@ -177,6 +177,7 @@
 
 	img[alt] {
 		font-style: italic;
+		text-wrap: balance;
 	}
 
 	audio:not([controls]) {
