@@ -24,10 +24,10 @@
 	"license": "UNLICENSED",
 	"private": true,
 	"scripts": {
-		"build": "bun run clean:build && bun x @11ty/eleventy",
-		"prestart": "bun run clean:build",
-		"start": "bun x @11ty/eleventy --serve",
-		"watch": "bun x @11ty/eleventy --watch",
+		"build": "deno run clean:build && eleventy",
+		"prestart": "deno run clean:build",
+		"start": "eleventy --serve",
+		"watch": "eleventy --watch",
 		"clean": "rimraf node_modules _site",
 		"clean:deps": "rimraf node_modules",
 		"clean:build": "rimraf _site"
