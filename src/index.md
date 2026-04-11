@@ -12,6 +12,9 @@ When <kbd>⌘</kbd><kbd>↹</kbd>-ing between apps, mouse over an app and releas
 Relatedly, while <kbd>⌘</kbd><kbd>↹</kbd>-ing, hit <kbd>Q</kbd> to quit or
 <kbd>H</kbd> to hide an app.
 
+Less intuitively, while <kbd>⌘</kbd><kbd>↹</kbd>-ing, press <kbd>1</kbd> to show
+all windows for that app.
+
 <kbd>⌥</kbd><kbd>⌘</kbd>-click an app in the Dock to switch to that app _and
 hide all other apps_ at the same time. This is great when screen sharing.
 
