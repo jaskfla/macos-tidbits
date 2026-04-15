@@ -101,12 +101,11 @@
 	}
 
 	em,
-	i,
 	var {
 		font-style: italic;
 	}
 
-	:is(em, i) > :is(em, i) {
+	em > em {
 		font-style: normal;
 	}
 
@@ -324,10 +323,14 @@
 		font-family: var(--font-display);
 	}
 
-	em,
-	i {
+	em {
 		--ot-alt-l: on;
 		--ot-single-story-a: on;
+	}
+
+	i {
+		font-style: normal;
+		font-weight: 600;
 	}
 
 	main {
@@ -639,5 +642,19 @@
 
 	.token.entity {
 		cursor: help;
+	}
+}
+
+@layer utility {
+	.visually-hidden:not(:active, :focus-visible, :focus-within) {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
 	}
 }

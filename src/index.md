@@ -195,7 +195,7 @@ Also relatedly, a bunch of the system icons live in
 ## Spelling dictionary
 
 When macOS says you’ve spelled something wrong, and you right-click then choose
-**Learn Spelling**, it just adds the word to the
+<i>Learn Spelling</i>, it just adds the word to the
 `~/Library/Spelling/LocalDictionary` file. If you’ve added a word to your
 dictionary that you no longer want, just open up the file and delete the word.
 
