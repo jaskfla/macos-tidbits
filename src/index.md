@@ -92,7 +92,7 @@ the file, or hold <kbd>⌥</kbd> to force Finder to
 <strong style="cursor: copy">copy</strong> the file.{% endfootnoteref %} (Yes,
 you can <kbd>⌥</kbd>-drag to duplicate a file within a single folder.)
 
-In Finder, hold <kbd>⌥</kbd> to **Get Info** on all selected items in one
+In Finder, hold <kbd>⌥</kbd> to <i>Get Info</i> on all selected items in one
 <i>Inspector</i> window, rather than in a barrage of individual <i>Info</i>
 windows. This also works with <kbd>⌥</kbd><kbd>⌘</kbd><kbd>I</kbd> (instead of
 <kbd>⌘</kbd><kbd>I</kbd>).
@@ -102,7 +102,7 @@ the Save sheet. Drag and drop a file to navigate there _and_ prepopulate the
 <i>Save&nbsp;As</i> field with its filename.
 
 <p id="go-to-folder">
-  You may already know about the <strong>Go to Folder…</strong> menu item
+  You may already know about the <i>Go to Folder…</i> menu item
   (<kbd>⇧</kbd><kbd>⌘</kbd><kbd>G</kbd>) in a normal Finder window. This is even
   quicker to invoke from an New/Open/Save dialogue: just hit <kbd>/</kbd>. (The
   usual shortcut still works.)
